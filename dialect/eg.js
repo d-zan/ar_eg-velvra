@@ -511,13 +511,12 @@ module.exports = {
             issues: `مشاكل واجهتنا`,
             noIssues: `كل حاجه خلصت من غير مشاكل.`,
             failed: `**عملية استرجاع النسخه فشلت**. في حاجه غلط حصلت, معلش جرب تاني او اتواصل مع المسؤول.`,
-            //! what the cmdchannrl?
+            //! what the cmdchannel?
             //TODO: Return here>>>
             commandChannelContext: `سياق القناة`,
             commandChannelPreserved: `🛟 تم الاحتفاظ بقناة الأوامر للسماح بالردود على التفاعل.`,
             commandChannelNotPreserved: `لم يتم الاحتفاظ بقناة الأوامر.`
             //!Re
-
         },
         cancel: {
             noActive: `مفيش عمليات انشاء نسخ احتياطيه شغاله!`,
