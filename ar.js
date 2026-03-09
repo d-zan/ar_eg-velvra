@@ -431,6 +431,18 @@ module.exports = {
         }
     },
 
+    ping: {
+        pinging: `جاري الاتصال...`,
+        networkError: `خطأ في الشبكة`,
+        excellent: `ممتاز`,
+        good: `جيد`,
+        high: `مرتفع`,
+        severeLag: `تأخير شديد`,
+        pong: `🏓 بونج!`,
+        wsPingTitle: `📡 استجابة الويب سوكيت`,
+        msgLatencyTitle: `⏱️ تأخير الرسالة`,
+    },
+
     backup: {
         error: `حدث خطأ غير متوقع أثناء معالجة أمر النسخ الاحتياطي. حاول مرة أخرى لاحقًا.`,
         create: {
