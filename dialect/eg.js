@@ -8,14 +8,14 @@ const loading = emojis.emojis.loading;
 const user_not_found = `**${incorrect} مش لاقي المستخدم ده في السيرفر.**`;
 
 const failure = (text="فشلت")=> {
-    return `**${incorrect} ${text}. اتاكد من صلاحيات, ان رتبتي اعلي من رتبة المستخدم ده. \n-# اذا المشكلة لم تحل, يرجاء التواصل مع الدعم.**`
+    return `**${incorrect} ${text}. اتاكد من صلاحيات, ان رتبتي اعلي من رتبة المستخدم ده. \n-# اذا المشكلة لم تحل, يرجى التواصل مع الدعم.**`
 }
 
 module.exports = {
     test: "الكلام علي اي؟ - اللهجة المصريه",
     timeout: {
         userNotFound: user_not_found,
-        invalidDuration: `**${warning} يرجاء كتابة صيغة مدة التيم اوت بشكل صحيح، مثل: \`1m/1d/1h\` **`,
+        invalidDuration: `**${warning} يرجى كتابة صيغة مدة التيم اوت بشكل صحيح، مثل: \`1m/1d/1h\` **`,
         durationExceed: `**${warning} مدة التيم اوت لايمكن ان تزيد عن 28 يوم!**`, 
         success: {
             set: `**${correct} تم اضافة تيم اوت للمستخدم {{user}} لمدة {{duration}},\n ${reason} السبب: {{reason}}.**`,
@@ -25,7 +25,7 @@ module.exports = {
         cannotSelf: `**${warning} مينفعش تدي نفسك تيم اوت.**`,
         cannotBot: `**${warning} مينفعش تديني تيم اوت :).**`,
         cannotHigher: `**${warning} متقدرش تدي المستخدم ده تيم اوت, ممكن المستخدم ده رتبته اعلي من رتبتك او معاه نفس رتبتك.**`,
-        cannotModerate: `**${warning} مقدرش ادي المستخدم ده تيم اوت. رتبته اعلي من رتبتي او معاها ادمن.**`,
+        cannotModerate: `**${warning} مقدرش ادي المستخدم ده تيم اوت. رتبته اعلي من رتبتي او معاه ادمن.**`,
         invalidAction: `**${incorrect} إجراء غير صالح. استخدم 'set' أو 'remove'.**`,
     },
     ban: {
@@ -48,7 +48,7 @@ module.exports = {
         error: failure("مقدرش اطرد العضو ده"),
         cannotSelf: `**${warning} مينفعش تطرد نفسك.**`,
         cannotBot: `**${warning} هي حصلت تطردني!**`,
-        cannotHigher: `**${warning} متقدرش تطرد عضو رتبته اعلي منك او معا نفس رتبتك.**`,
+        cannotHigher: `**${warning} متقدرش تطرد عضو رتبته اعلي منك او معاه نفس رتبتك.**`,
         botCannotHigher: `**${warning} مقدرش اطرد عضو رتبته اعلي من رتبتي او معاه نفس رتبتي.**`,
         cannotModerate: `**${warning} مقدرش اطرد عضو رتبته اعلي من رتبتي او معاه ادمن.**`,
     },
@@ -62,14 +62,14 @@ module.exports = {
         channelNotFound: `**${incorrect} مش لاقي الروم دي.**`,
         locked: `**${correct} تم إقفل {{channel}} بنجاح. \n${reason} السبب: {{reason}}**`,
         alreadyLocked: `**${warning} الروم دي مقفوله اصلا! **`,
-        error: `**${incorrect} مقدرش اقفل الروم دي. أتاكد ان معايا الصلاحيات الازمة.\n-# إذا استمرت المشكلة، يرجى التواصل مع الدعم.**`,
-        cannotLock: `**${warning} مقدرش اقفل الروم دي يرجاء التحقق من صلاحياتي.**`
+        error: `**${incorrect} مقدرش اقفل الروم دي. أتاكد ان معايا الصلاحيات اللازمة.\n-# إذا استمرت المشكلة، يرجى التواصل مع الدعم.**`,
+        cannotLock: `**${warning} مقدرش اقفل الروم دي يرجى التحقق من صلاحياتي.**`
     },
     unlock: {
         channelNotFound: `**${incorrect} مش لاقي الروم دي.**`,
         unlocked: `**${correct} تم فتح {{channel}} بنجاح. \n${reason} السبب: {{reason}}**`,
         notLocked: `**${warning} الروم مش مقفوله اصلا!**`,
-        error: `**${incorrect} مقدرش افتح الروم دي. يرجاء التحقق من صلاحياتي.\n-# إذا استمرت المشكلة، يرجى التواصل مع الدعم.**`,
+        error: `**${incorrect} مقدرش افتح الروم دي. يرجى التحقق من صلاحياتي.\n-# إذا استمرت المشكلة، يرجى التواصل مع الدعم.**`,
         cannotUnlock: `**${warning} مقدرش افتح الروم أتاكد من صلاحياتي.**`
     },
     avatar: {
@@ -154,7 +154,7 @@ module.exports = {
             insufficient: `معكش فلوس كفايه.`,
             invalidAmount: `المبلغ غلط. دخل المبلغ صح, لازم اكبر من الـ0 و الكسور مش مسموح بيها.`,
             selfTransfer: `فشل التحويل: متقدرش تبعت لنفسك.`,
-            botTransfer: `فشل التحويل: من امتي و البوتات عندها حسابات بنكية.`,
+            botTransfer: `فشل التحويل: من امتي البوتات عندها حسابات بنكية؟.`,
             accountTooNew: `تم حظر التحويل: حسابك لازم يكون معمول من شهر علي الاقل.`,
             recipientTooNew: `تم حظر التحويل: حساب المستلم لازم يكون معمول من شهر علي الاقل.`,
             insufficientBalance: `فشل التحويل: رصيدك غير كافي. \n رصيدك الحالي: **{{balance}}** جنية`,
@@ -379,7 +379,7 @@ module.exports = {
         cannotModerate: `مقدرش اغير لقب المستخدم ده. ممكن رتبته اعلي من رتبتي.`,
         successReset: `تم إعادة تعيين لقب {{user}} بنجاح.`,
         successSet: `تم تغيير لقب {{user}} إلى **{{nickname}}** بنجاح.`,
-        error: `حاجه غلط حصلت. فشل في تغيير القب {{user}}: {{error}}`,
+        error: `حاجه غلط حصلت. فشل في تغيير اللقب {{user}}: {{error}}`,
     },
 
     disconnect: {
@@ -394,30 +394,30 @@ module.exports = {
         channel: `الروم`,
         moderator: `المسؤول`,
         reason: `السبب`,
-        failed:  `فشل طرد العضو من الفويس: {error}`,
+        failed:  `فشل طرد العضو من الفويس: {{error}}`,
         invalid_channel: `الروم لازم تكون صوتيه.`,
         empty_channel: `الروم فاضيه.`,
         mass_title: `طرد الجميع`,
-        mass_desc: `تم طرد جميع الاعضاء من **{channel}**.`,
+        mass_desc: `تم طرد جميع الاعضاء من **{{channel}}**.`,
         success: `تم طرد من الفويس.`,
     },
 
     addemoji: {
-        invalidFileType: `نوع الملف في غلط. النوع المسموح بيه: {type}`,
-        fileTooLarge: `حجم الملف كبير. \n الحد الاقصي للحجم: {max}KB`,
+        invalidFileType: `نوع الملف في غلط. النوع المسموح بيه: {{type}}`,
+        fileTooLarge: `حجم الملف كبير. \n الحد الاقصي للحجم: {{max}}KB`,
         invalidSource: `مش شغال الرابط ده او الايموجي ده. جرب مره تاني مع رابط او ايموجي شغالين.`,
-        urlInvalidType: `ملف الـ بيشير له الرابط نوعه غير صحيح. النوع المسموح بيه: {type}.`,
-        fileTooBigRemote: `حجم الملف كبير. \n الحد الاقصي للحجم: {max}KB`,
+        urlInvalidType: `ملف الـ بيشير له الرابط نوعه غير صحيح. النوع المسموح بيه: {{type}}.`,
+        fileTooBigRemote: `حجم الملف كبير. \n الحد الاقصي للحجم: {{max}}KB`,
         mustProvideSource: `حِط رابط او ايموجي او ملف.`,
         emojiSuccessTitle: `تم إضافة الإيموجي`,
-        emojiSuccessDesc: `تم إضافة {emoji} باسم **{name}**`,
-        emojiFail: `فشل في إضافة الإيموجي: {error}`,
+        emojiSuccessDesc: `تم إضافة {{emoji}} باسم **{{name}}**`,
+        emojiFail: `فشل في إضافة الإيموجي: {{error}}`,
 //Sticker
         missingTags: `لازم تختار ايموجي مرتبط بالستيكر ده.`,
         mustProvideSticker: `حِط رابط او ملف للستيكر.`,
         stickerSuccessTitle: `تم إضافة الاستيكر`,
         stickerSuccessDesc: `تم إضافة الاستيكر **{name}**`,
-        stickerFail: `فشل في إضافة الاستيكر: {error}`,
+        stickerFail: `فشل في إضافة الاستيكر: {{error}}`,
     },
     leveling: {
         underDevelopment: `تحت التطوير`,
@@ -453,7 +453,7 @@ module.exports = {
         info: {
             title: `معلومات النسخة الاحتياطية`,
             crossGuild: `النسخة موجوده بس تخص سيرفر تاني.`,
-            notFound: `لم يتم العثور علي النسخه الاحتياطيه. يرجاء التأكد من الـID الخاص بالنسخه.`,
+            notFound: `لم يتم العثور علي النسخه الاحتياطيه. يرجى التأكد من الـID الخاص بالنسخه.`,
             rolesStored: `الرتب المخزنة`,
             channelsStored: `الرومات المخزنة`,
             bansStored: `الحظر المخزن`,
@@ -469,7 +469,7 @@ module.exports = {
         },
         load: {
             confirmRequired: `يجب تعيين \`confirm\` إلى \`true\` للمتابعة مع استعادة النسخة الاحتياطية.`,
-            notFound: `مش لاق النسخه دي. يرجاء التحقق من الـID الخاص بالنسخه تاني.`,
+            notFound: `مش لاقي النسخه دي. يرجى التحقق من الـID الخاص بالنسخه تاني.`,
             unavailable: `متقدرش تسترجع النسخه دي حالي. \n الحالة: {{status}}`,
             empty: `النسخه مفيش فيها حاجه!`, 
             crossGuildWarning:`النسخه دي تم انشاؤها في سيرفر تاني. فـ ممكن  بعض الاشياء لا يتم استعادتها بشكل مثالي.`,
