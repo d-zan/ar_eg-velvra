@@ -45,21 +45,21 @@ module.exports = {
         userNotFound: `**${emojis.emojis.incorrect} User ID not provided.**`,
         userNotBanned: `**${emojis.emojis.warning} This user is not banned.**`,
         unbanned: `**${emojis.emojis.correct} Successfully unbanned {{user}}. ${emojis.emojis.reason} Reason: {{reason}}**`,
-        error: `**${emojis.emojis.incorrect} Failed to unban the user. Error: {{error}}**`
+        error: `**${emojis.emojis.incorrect} Failed to unban the user. Error: {{error}}**`,
     },
     lock: {
         channelNotFound: `**${emojis.emojis.incorrect} Channel not found.**`,
         locked: `**${emojis.emojis.correct} Successfully locked {{channel}}. ${emojis.emojis.reason} Reason: {{reason}}**`,
         alreadyLocked: `**${emojis.emojis.warning} This channel is already locked.**`,
         error: `**${emojis.emojis.incorrect} Failed to lock the channel. Do I have the correct permissions?\n-# If the problem persists, please contact support.**`,
-        cannotLock: `**${emojis.emojis.warning} I cannot lock this channel. Do I have the correct permissions?**`
+        cannotLock: `**${emojis.emojis.warning} I cannot lock this channel. Do I have the correct permissions?**`,
     },
     unlock: {
         channelNotFound: `**${emojis.emojis.incorrect} Channel not found.**`,
         unlocked: `**${emojis.emojis.correct} Successfully unlocked {{channel}}. ${emojis.emojis.reason} Reason: {{reason}}**`,
         notLocked: `**${emojis.emojis.warning} This channel is not locked.**`,
         error: `**${emojis.emojis.incorrect} Failed to unlock the channel. Do I have the correct permissions?\n-# If the problem persists, please contact support.**`,
-        cannotUnlock: `**${emojis.emojis.warning} I cannot unlock this channel. Do I have the correct permissions?**`
+        cannotUnlock: `**${emojis.emojis.warning} I cannot unlock this channel. Do I have the correct permissions?**`,
     },
 
     avatar: {
@@ -102,7 +102,7 @@ module.exports = {
             sd: `Download SD`,
             hd: `Download HD`,
             uhd: `Download 4K`,
-        }
+        },
     },
 
     // Shared / common strings
@@ -136,7 +136,7 @@ module.exports = {
             refresh: `Refresh`,
             transactions: `Transactions`,
             back: `Back`,
-            daily: `Claim Daily`
+            daily: `Claim Daily`,
         },
         transfer: {
             success: `Transfer successful.`,
@@ -164,7 +164,7 @@ module.exports = {
                 `You have received an incoming transfer of {{amount}} Velvra coins from {{sender}}`,
                 `Cha-ching! You just received {{amount}} Velvra coins from {{sender}}!`,
                 `Good news! {{sender}} has sent you {{amount}} Velvra coins.`,
-                `Transfer Alert! {{sender}} transferred {{amount}} Velvra coins to you.`
+                `Transfer Alert! {{sender}} transferred {{amount}} Velvra coins to you.`,
             ],
             dmTransferType: `Transfer Type: None`,
             dmReason: `Reason`,
@@ -189,7 +189,7 @@ module.exports = {
             // DM notification
             dmReceived: `You have received a reputation point from {{sender}}!`,
             dmTotal: `You now have {{count}} reputation point(s).`,
-        }
+        },
     },
 
     giveaway: {
@@ -238,7 +238,7 @@ module.exports = {
             alreadyEnded: `This giveaway has already ended!`,
             alreadyEntered: `You have already entered this giveaway!`,
             success: `🎉 You have successfully entered the giveaway!`,
-        }
+        },
     },
 
     server: {
@@ -275,7 +275,7 @@ module.exports = {
         totalChannels: `Channels`,
         region: `Region`,
         requestedBy: `Requested by`,
-        onlyInServer: `This command can only be used in a server!`
+        onlyInServer: `This command can only be used in a server!`,
     },
 
     clear: {
@@ -428,7 +428,7 @@ module.exports = {
             voiceReward: `Reward`,
             voiceProgress: `Progress`,
             footer: `Velvra Quests`,
-        }
+        },
     },
 
     ping: {
@@ -497,7 +497,7 @@ module.exports = {
             failed: `**Restoration Failed**\nAn unexpected error occurred during the restoration process. Please try again or contact an administrator for assistance.`,
             commandChannelContext: `Channel Context`,
             commandChannelPreserved: `🛟 Command channel preserved to allow interaction responses.`,
-            commandChannelNotPreserved: `Command channel was not preserved.`
+            commandChannelNotPreserved: `Command channel was not preserved.`,
         },
         cancel: {
             noActive: `There are no backup creation processes currently running.`,
@@ -507,6 +507,6 @@ module.exports = {
             notFound: `The specified backup ID could not be located.`,
             alreadyDeleted: `This backup has already been deleted.`,
             success: `Backup \`{{id}}\` has been deleted.`,
-        }
-    }
-}
+        },
+    },
+};

@@ -91,3 +91,11 @@ Provide a description of what you translated.
 Maintainers will review your submission. You may be asked for revisions before merging.
 
 - [![Crowdin](https://badges.crowdin.net/velvra/localized.svg)](https://crowdin.com/project/velvra)
+
+---
+
+## Contributors
+
+<a href="https://github.com/Velvra/locale/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Velvra/locale" />
+</a>

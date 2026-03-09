@@ -45,21 +45,21 @@ module.exports = {
         userNotFound: `**${emojis.emojis.incorrect} ユーザーIDが指定されていません。**`,
         userNotBanned: `**${emojis.emojis.warning} このユーザーはBANされていません。**`,
         unbanned: `**${emojis.emojis.correct} {{user}}のBANを解除しました。 ${emojis.emojis.reason} 理由: {{reason}}**`,
-        error: `**${emojis.emojis.incorrect} ユーザーのBAN解除に失敗しました。エラー: {{error}}**`
+        error: `**${emojis.emojis.incorrect} ユーザーのBAN解除に失敗しました。エラー: {{error}}**`,
     },
     lock: {
         channelNotFound: `**${emojis.emojis.incorrect} チャンネルが見つかりません。**`,
         locked: `**${emojis.emojis.correct} {{channel}}をロックしました。 ${emojis.emojis.reason} 理由: {{reason}}**`,
         alreadyLocked: `**${emojis.emojis.warning} このチャンネルは既にロックされています。**`,
         error: `**${emojis.emojis.incorrect} チャンネルのロックに失敗しました。正しい権限がありますか？\n-# 問題が解決しない場合は、サポートにお問い合わせください。**`,
-        cannotLock: `**${emojis.emojis.warning} このチャンネルをロックできません。正しい権限がありますか？**`
+        cannotLock: `**${emojis.emojis.warning} このチャンネルをロックできません。正しい権限がありますか？**`,
     },
     unlock: {
         channelNotFound: `**${emojis.emojis.incorrect} チャンネルが見つかりません。**`,
         unlocked: `**${emojis.emojis.correct} {{channel}}のロックを解除しました。 ${emojis.emojis.reason} 理由: {{reason}}**`,
         notLocked: `**${emojis.emojis.warning} このチャンネルはロックされていません。**`,
         error: `**${emojis.emojis.incorrect} チャンネルのロック解除に失敗しました。正しい権限がありますか？\n-# 問題が解決しない場合は、サポートにお問い合わせください。**`,
-        cannotUnlock: `**${emojis.emojis.warning} このチャンネルのロックを解除できません。正しい権限がありますか？**`
+        cannotUnlock: `**${emojis.emojis.warning} このチャンネルのロックを解除できません。正しい権限がありますか？**`,
     },
 
     avatar: {
@@ -102,7 +102,7 @@ module.exports = {
             sd: `SDをダウンロード`,
             hd: `HDをダウンロード`,
             uhd: `4Kをダウンロード`,
-        }
+        },
     },
 
     // 共通文字列
@@ -136,7 +136,7 @@ module.exports = {
             refresh: `更新`,
             transactions: `取引履歴`,
             back: `戻る`,
-            daily: `デイリーを受け取る`
+            daily: `デイリーを受け取る`,
         },
         transfer: {
             success: `送金が完了しました。`,
@@ -164,7 +164,7 @@ module.exports = {
                 `{{sender}}から{{amount}} Velvraコインの送金を受け取りました`,
                 `チャリン！{{sender}}から{{amount}} Velvraコインを受け取りました！`,
                 `朗報です！{{sender}}があなたに{{amount}} Velvraコインを送りました。`,
-                `送金通知！{{sender}}が{{amount}} Velvraコインを送金しました。`
+                `送金通知！{{sender}}が{{amount}} Velvraコインを送金しました。`,
             ],
             dmTransferType: `送金タイプ: なし`,
             dmReason: `理由`,
@@ -189,7 +189,7 @@ module.exports = {
             // DM通知
             dmReceived: `{{sender}}からレピュテーションポイントを受け取りました！`,
             dmTotal: `現在のレピュテーション: {{count}}ポイント。`,
-        }
+        },
     },
 
     giveaway: {
@@ -238,7 +238,7 @@ module.exports = {
             alreadyEnded: `このギブアウェイは既に終了しています！`,
             alreadyEntered: `既にこのギブアウェイに参加しています！`,
             success: `🎉 ギブアウェイへの参加が完了しました！`,
-        }
+        },
     },
 
     server: {
@@ -275,7 +275,7 @@ module.exports = {
         totalChannels: `チャンネル`,
         region: `地域`,
         requestedBy: `リクエスト者`,
-        onlyInServer: `このコマンドはサーバー内でのみ使用できます！`
+        onlyInServer: `このコマンドはサーバー内でのみ使用できます！`,
     },
 
     clear: {
@@ -428,7 +428,7 @@ module.exports = {
             voiceReward: `報酬`,
             voiceProgress: `進捗`,
             footer: `Velvra クエスト`,
-        }
+        },
     },
 
     ping: {
@@ -497,7 +497,7 @@ module.exports = {
             failed: `**復元に失敗しました**\n復元プロセス中に予期しないエラーが発生しました。もう一度お試しいただくか、管理者にお問い合わせください。`,
             commandChannelContext: `チャンネルコンテキスト`,
             commandChannelPreserved: `🛟 インタラクション応答を許可するためにコマンドチャンネルが保持されました。`,
-            commandChannelNotPreserved: `コマンドチャンネルは保持されませんでした。`
+            commandChannelNotPreserved: `コマンドチャンネルは保持されませんでした。`,
         },
         cancel: {
             noActive: `現在実行中のバックアップ作成プロセスはありません。`,
@@ -507,6 +507,6 @@ module.exports = {
             notFound: `指定されたバックアップIDが見つかりません。`,
             alreadyDeleted: `このバックアップは既に削除されています。`,
             success: `バックアップ\`{{id}}\`が削除されました。`,
-        }
-    }
-}
+        },
+    },
+};

@@ -45,21 +45,21 @@ module.exports = {
         userNotFound: `**${emojis.emojis.incorrect} لم يتم توفير معرف المستخدم.**`,
         userNotBanned: `**${emojis.emojis.warning} هذا المستخدم غير محظور.**`,
         unbanned: `**${emojis.emojis.correct} تم إلغاء حظر {{user}} بنجاح. ${emojis.emojis.reason} السبب: {{reason}}**`,
-        error: `**${emojis.emojis.incorrect} فشل في إلغاء حظر المستخدم. الخطأ: {{error}}**`
+        error: `**${emojis.emojis.incorrect} فشل في إلغاء حظر المستخدم. الخطأ: {{error}}**`,
     },
     lock: {
         channelNotFound: `**${emojis.emojis.incorrect} لم يتم العثور على القناة.**`,
         locked: `**${emojis.emojis.correct} تم قفل {{channel}} بنجاح. ${emojis.emojis.reason} السبب: {{reason}}**`,
         alreadyLocked: `**${emojis.emojis.warning} هذه القناة مقفلة بالفعل.**`,
         error: `**${emojis.emojis.incorrect} فشل في قفل القناة. هل لدي الصلاحيات الصحيحة?\n-# إذا استمرت المشكلة، يرجى التواصل مع الدعم.**`,
-        cannotLock: `**${emojis.emojis.warning} لا أستطيع قفل هذه القناة. هل لدي الصلاحيات الصحيحة؟**`
+        cannotLock: `**${emojis.emojis.warning} لا أستطيع قفل هذه القناة. هل لدي الصلاحيات الصحيحة؟**`,
     },
     unlock: {
         channelNotFound: `**${emojis.emojis.incorrect} لم يتم العثور على القناة.**`,
         unlocked: `**${emojis.emojis.correct} تم فتح {{channel}} بنجاح. ${emojis.emojis.reason} السبب: {{reason}}**`,
         notLocked: `**${emojis.emojis.warning} هذه القناة غير مقفلة.**`,
         error: `**${emojis.emojis.incorrect} فشل في فتح القناة. هل لدي الصلاحيات الصحيحة?\n-# إذا استمرت المشكلة، يرجى التواصل مع الدعم.**`,
-        cannotUnlock: `**${emojis.emojis.warning} لا أستطيع فتح هذه القناة. هل لدي الصلاحيات الصحيحة؟**`
+        cannotUnlock: `**${emojis.emojis.warning} لا أستطيع فتح هذه القناة. هل لدي الصلاحيات الصحيحة؟**`,
     },
 
     avatar: {
@@ -102,7 +102,7 @@ module.exports = {
             sd: `تحميل SD`,
             hd: `تحميل HD`,
             uhd: `تحميل 4K`,
-        }
+        },
     },
 
     // مشترك / عبارات شائعة
@@ -136,7 +136,7 @@ module.exports = {
             refresh: `تحديث`,
             transactions: `العمليات`,
             back: `رجوع`,
-            daily: `استلام المكافأة`
+            daily: `استلام المكافأة`,
         },
         transfer: {
             success: `تم التحويل بنجاح.`,
@@ -164,7 +164,7 @@ module.exports = {
                 `لقد استلمت تحويلًا واردًا بقيمة {{amount}} عملة فلفرا من {{sender}}`,
                 `تشا-تشينغ! استلمت للتو {{amount}} عملة فلفرا من {{sender}}!`,
                 `أخبار سارة! أرسل لك {{sender}} مبلغ {{amount}} عملة فلفرا.`,
-                `تنبيه تحويل! قام {{sender}} بتحويل {{amount}} عملة فلفرا إليك.`
+                `تنبيه تحويل! قام {{sender}} بتحويل {{amount}} عملة فلفرا إليك.`,
             ],
             dmTransferType: `نوع التحويل: بدون`,
             dmReason: `السبب`,
@@ -189,7 +189,7 @@ module.exports = {
             // إشعار الرسائل الخاصة
             dmReceived: `لقد حصلت على نقطة سمعة من {{sender}}!`,
             dmTotal: `لديك الآن {{count}} نقطة سمعة.`,
-        }
+        },
     },
 
     giveaway: {
@@ -238,7 +238,7 @@ module.exports = {
             alreadyEnded: `هذه الهدية انتهت بالفعل!`,
             alreadyEntered: `لقد شاركت في هذه الهدية بالفعل!`,
             success: `🎉 تم تسجيل مشاركتك في الهدية بنجاح!`,
-        }
+        },
     },
 
     server: {
@@ -275,7 +275,7 @@ module.exports = {
         totalChannels: `القنوات`,
         region: `المنطقة`,
         requestedBy: `بواسطة`,
-        onlyInServer: `هذا الأمر يمكن استخدامه في السيرفر فقط!`
+        onlyInServer: `هذا الأمر يمكن استخدامه في السيرفر فقط!`,
     },
 
     clear: {
@@ -428,7 +428,7 @@ module.exports = {
             voiceReward: `المكافأة`,
             voiceProgress: `التقدم`,
             footer: `مهام فلفرا`,
-        }
+        },
     },
 
     ping: {
@@ -497,7 +497,7 @@ module.exports = {
             failed: `**فشلت عملية الاستعادة**\nحدث خطأ غير متوقع أثناء عملية الاستعادة. يرجى المحاولة مرة أخرى أو الاتصال بمسؤول للحصول على المساعدة.`,
             commandChannelContext: `سياق القناة`,
             commandChannelPreserved: `🛟 تم الاحتفاظ بقناة الأوامر للسماح بالردود على التفاعل.`,
-            commandChannelNotPreserved: `لم يتم الاحتفاظ بقناة الأوامر.`
+            commandChannelNotPreserved: `لم يتم الاحتفاظ بقناة الأوامر.`,
         },
         cancel: {
             noActive: `لا توجد عمليات إنشاء نسخ احتياطية قيد التشغيل.`,
@@ -507,6 +507,6 @@ module.exports = {
             notFound: `لم يتم العثور على معرف النسخة المحدد.`,
             alreadyDeleted: `هذه النسخة تم حذفها بالفعل.`,
             success: `تم حذف النسخة الاحتياطية \`{{id}}\`.`,
-        }
-    }
-}
+        },
+    },
+};
