@@ -16,6 +16,8 @@ We appreciate every contribution that helps improve the project, whether it is c
 
 ### Translators:
 AR, EG: [Shimizu Hiroyuki](https://github.com/mutesuffering), [Yousef Karm](https://github.com/d-zan), [ReLaX](https://github.com/RlxChap2)
+AR, IQ: [MohaDev69](https://github.com/MohaDev-69), [Devon](https://github.com/arabpolice)
+AR, SA: [Shimizu Hiroyuki](https://github.com/mutesuffering), [ReLaX](https://github.com/RlxChap2)
 
 ---
 
