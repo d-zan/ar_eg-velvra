@@ -57,6 +57,13 @@ module.exports = {
         userNotBanned: `**${warning} المستخدم مش واخد بان.**`,
         unbanned: `**${correct} تم فك البان من المستخدم {{user}} بنجاح. \n${reason} السبب: {{reason}}**`,
         error: `**${incorrect} فشل في إلغاء حظر المستخدم. الخطأ: {{error}}**`,
+        no_premium: ``,
+        noBans: ``,
+        massTitle: ``,
+        massDesc: ``,
+        massSuccess: ``,
+        massFailed: ``,
+        massReason: ``,
     },
     lock: {
         channelNotFound: `**${incorrect} مش لاقي الروم دي.**`,

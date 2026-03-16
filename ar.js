@@ -46,6 +46,13 @@ module.exports = {
         userNotBanned: `**${emojis.emojis.warning} هذا المستخدم غير محظور.**`,
         unbanned: `**${emojis.emojis.correct} تم إلغاء حظر {{user}} بنجاح. ${emojis.emojis.reason} السبب: {{reason}}**`,
         error: `**${emojis.emojis.incorrect} فشل في إلغاء حظر المستخدم. الخطأ: {{error}}**`,
+        no_premium: ``,
+        noBans: ``,
+        massTitle: ``,
+        massDesc: ``,
+        massSuccess: ``,
+        massFailed: ``,
+        massReason: ``,
     },
     lock: {
         channelNotFound: `**${emojis.emojis.incorrect} لم يتم العثور على القناة.**`,

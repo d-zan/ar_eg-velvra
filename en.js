@@ -46,6 +46,13 @@ module.exports = {
         userNotBanned: `**${emojis.emojis.warning} This user is not banned.**`,
         unbanned: `**${emojis.emojis.correct} Successfully unbanned {{user}}. ${emojis.emojis.reason} Reason: {{reason}}**`,
         error: `**${emojis.emojis.incorrect} Failed to unban the user. Error: {{error}}**`,
+        no_premium: `**${emojis.emojis.warning} This feature requires a premium subscription. Please upgrade to use mass unban.**`,
+        noBans: `**${emojis.emojis.warning} There are no banned members in this server.**`,
+        massTitle: `Mass Unban`,
+        massDesc: `All banned members have been unbanned.`,
+        massSuccess: `Unbanned`,
+        massFailed: `Failed`,
+        massReason: `Reason`,
     },
     lock: {
         channelNotFound: `**${emojis.emojis.incorrect} Channel not found.**`,

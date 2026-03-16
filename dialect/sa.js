@@ -46,6 +46,13 @@ module.exports = {
         userNotBanned: `**${emojis.emojis.warning} الرجال أساساً مو متبند.**`,
         unbanned: `**${emojis.emojis.correct} فكينا قيد {{user}} بنجاح. ${emojis.emojis.reason} السالفة: {{reason}}**`,
         error: `**${emojis.emojis.incorrect} عيا ينفك الباند، الخطأ: {{error}}**`,
+        no_premium: ``,
+        noBans: ``,
+        massTitle: ``,
+        massDesc: ``,
+        massSuccess: ``,
+        massFailed: ``,
+        massReason: ``,
     },
     lock: {
         channelNotFound: `**${emojis.emojis.incorrect} القناة مب موجودة، وينها؟**`,

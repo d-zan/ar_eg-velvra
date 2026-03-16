@@ -46,6 +46,13 @@ module.exports = {
         userNotBanned: `**${emojis.emojis.warning} このユーザーはBANされていません。**`,
         unbanned: `**${emojis.emojis.correct} {{user}}のBANを解除しました。 ${emojis.emojis.reason} 理由: {{reason}}**`,
         error: `**${emojis.emojis.incorrect} ユーザーのBAN解除に失敗しました。エラー: {{error}}**`,
+        no_premium: ``,
+        noBans: ``,
+        massTitle: ``,
+        massDesc: ``,
+        massSuccess: ``,
+        massFailed: ``,
+        massReason: ``,
     },
     lock: {
         channelNotFound: `**${emojis.emojis.incorrect} チャンネルが見つかりません。**`,
